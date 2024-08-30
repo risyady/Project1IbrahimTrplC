@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NilaiActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Nilai Akhir Mahasiswa"
+        android:textColor="@color/green"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:id="@+id/txtTitleNilai"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitleNilai"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/tbl1">
+        <TableRow>
+            <TextView
+                android:id="@+id/txtNama"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/green"
+                android:text="Nama Mahasiswa"/>
+            <EditText
+                android:id="@+id/editNama"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                android:hint="entri nama mahasiswa"
+                android:textColorHint="@color/black"
+                android:layout_marginStart="20dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtHarian"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/green"
+                android:text="Nilai Harian"/>
+            <EditText
+                android:id="@+id/editHarian"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                android:hint="entri nilai harian"
+                android:textColorHint="@color/black"
+                android:layout_marginStart="20dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtUts"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/green"
+                android:text="Nilai UTS"/>
+            <EditText
+                android:id="@+id/editUts"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                android:hint="entri nilai UTS"
+                android:textColorHint="@color/black"
+                android:layout_marginStart="20dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtUas"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/green"
+                android:text="Nilai UAS"/>
+            <EditText
+                android:id="@+id/editUas"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                android:hint="entri nilai UAS"
+                android:textColorHint="@color/black"
+                android:layout_marginStart="20dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtSks"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/green"
+                android:text="Jumlah SKS"/>
+            <Spinner
+                android:id="@+id/spinSks"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/red"
+                android:hint="entri nama mahasiswa"
+                android:textColorHint="@color/black"
+                android:layout_marginStart="20dp"
+                android:layout_width="200dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tbl1"
+        android:id="@+id/txtSpp"
+        android:text="Pembayaran SPP"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtSpp"
+        android:id="@+id/chkPembangunan"
+        android:text="Uang Pembangunan"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:buttonTint="@color/black"
+        android:layout_marginStart="150dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkPembangunan"
+        android:id="@+id/chkSemester"
+        android:text="Uang Semester"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:buttonTint="@color/black"
+        android:layout_marginStart="150dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkSemester"
+        android:id="@+id/chkDiklat"
+        android:text="Uang Diklat"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:buttonTint="@color/black"
+        android:layout_marginStart="150dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chkDiklat"
+        android:id="@+id/txtBeasiswa"
+        android:text="Status Beasiswa"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtBeasiswa"
+        android:id="@+id/rgBeasiswa">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penerima Beasiswa"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:layout_marginStart="150dp"
+            android:buttonTint="@color/black"
+            android:textSize="18sp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bukan Beasiswa"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:layout_marginStart="150dp"
+            android:buttonTint="@color/black"
+            android:textSize="18sp"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/rgBeasiswa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Proses"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green"
+        android:textSize="20sp"
+        android:id="@+id/btnProses"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnProses"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/txtOutNilai"
+        android:text="Detil Nilai Mahasiswa"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
+</ScrollView>
