@@ -125,7 +125,7 @@
 
     <CheckBox
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_below="@id/txtSpp"
         android:id="@+id/chkPembangunan"
         android:text="Uang Pembangunan"
@@ -133,11 +133,11 @@
         android:textStyle="bold"
         android:textColor="@color/red"
         android:buttonTint="@color/black"
-        android:layout_marginStart="150dp"/>
+        android:layout_marginStart="120dp"/>
 
     <CheckBox
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_below="@id/chkPembangunan"
         android:id="@+id/chkSemester"
         android:text="Uang Semester"
@@ -145,11 +145,11 @@
         android:textStyle="bold"
         android:textColor="@color/red"
         android:buttonTint="@color/black"
-        android:layout_marginStart="150dp"/>
+        android:layout_marginStart="120dp"/>
 
     <CheckBox
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_below="@id/chkSemester"
         android:id="@+id/chkDiklat"
         android:text="Uang Diklat"
@@ -157,7 +157,7 @@
         android:textStyle="bold"
         android:textColor="@color/red"
         android:buttonTint="@color/black"
-        android:layout_marginStart="150dp"/>
+        android:layout_marginStart="120dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -178,20 +178,20 @@
         android:id="@+id/rgBeasiswa">
         <RadioButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:text="Penerima Beasiswa"
             android:textColor="@color/red"
             android:textStyle="bold"
-            android:layout_marginStart="150dp"
+            android:layout_marginStart="120dp"
             android:buttonTint="@color/black"
             android:textSize="18sp"/>
         <RadioButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:text="Bukan Beasiswa"
             android:textColor="@color/red"
             android:textStyle="bold"
-            android:layout_marginStart="150dp"
+            android:layout_marginStart="120dp"
             android:buttonTint="@color/black"
             android:textSize="18sp"/>
     </RadioGroup>

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project1IbrahimTrplC">
         <activity
+            android:name=".EmpatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TigaActivity"
+            android:exported="false" />
+        <activity
             android:name=".NilaiActivity"
             android:exported="true">
             <intent-filter>
