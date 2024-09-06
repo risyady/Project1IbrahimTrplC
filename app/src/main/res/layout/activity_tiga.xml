@@ -1,9 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TigaActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:src="@drawable/images"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/editProduct"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/image"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/border_style"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:hint="    entri product name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/editTotal"
+        android:layout_below="@id/editProduct"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_style"
+        android:hint="    entri product price"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@android:drawable/arrow_up_float"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editPrice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTotal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/border_style"
+        android:drawableLeft="@android:drawable/stat_sys_warning"
+        android:hint="    entri piece(s)"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/black"
+        />
+
+    <Spinner
+        android:id="@+id/spinPieces"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editPrice"
+        android:background="@drawable/border_style" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnTransaction"
+        android:text="Proses"
+        android:layout_below="@id/spinPieces"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

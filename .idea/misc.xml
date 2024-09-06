@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/border_style.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_empat.xml" value="0.22291666666666668" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_nilai.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_tiga.xml" value="0.25" />
         <entry key="app/src/main/res/layout/spinner_style.xml" value="0.22291666666666668" />
       </map>
     </option>

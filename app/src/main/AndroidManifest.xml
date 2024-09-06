@@ -13,10 +13,13 @@
             android:name=".EmpatActivity"
             android:exported="false" />
         <activity
-            android:name=".TigaActivity"
+            android:name=".NilaiActivity"
             android:exported="false" />
         <activity
-            android:name=".NilaiActivity"
+            android:name=".MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".TigaActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
